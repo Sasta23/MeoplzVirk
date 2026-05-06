@@ -47,16 +47,36 @@ export default function Navigation() {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <a
-            href="#hero"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick('#hero');
-            }}
-            className="text-xl font-bold text-primary transition-colors hover:text-primary/80"
-          >
-            Meo Studio
-          </a>
+         <a
+  href="#hero"
+  onClick={(e) => {
+    e.preventDefault();
+    handleNavClick('#hero');
+  }}
+  className="flex items-center gap-3 group"
+>
+  {/* 🔥 LOGO */}
+  <img
+    src="/logo.png"
+    alt="Meo Studio"
+    className="
+      h-12 md:h-16
+      w-auto
+      object-contain
+
+      transition-all duration-300
+      group-hover:scale-105
+
+      drop-shadow-[0_0_8px_rgba(255,180,100,0.3)]
+      group-hover:drop-shadow-[0_0_16px_rgba(255,180,100,0.6)]
+    "
+  />
+
+  {/* 🔥 TEKST */}
+  <span className="text-xl font-bold text-primary transition-colors group-hover:text-primary/80">
+    Meo Studio
+  </span>
+        </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
