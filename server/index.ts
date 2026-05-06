@@ -16,7 +16,7 @@ async function startServer() {
   app.use(express.json());
 
   // Initialisér Resend med din API-nøgle
-  const resend = new Resend('re_fPEATS8m_5CiToLfueC57msxUZqjp8A7A');
+  const resend = new Resend('re_bZxHujBd_7Qiq2J3GcCt4thoue25hbDLo');
 
   // Definer stien til de statiske filer (frontend)
   const distPath = path.resolve(__dirname, "..", "dist", "public");
